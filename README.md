@@ -37,6 +37,25 @@ kaiburr-task5-ml/
    └─ screenshots/                     # include your name + system clock in each screenshot
 ```
 
+## Data & Model Artifacts (not in repo)
+
+### Dataset
+- Source: **CFPB Consumer Complaint Database** — https://catalog.data.gov/dataset/consumer-complaint-database
+- Reason not included: the raw CSV is ~6GB and is intentionally **not committed**.
+- How to use:
+  1) Download the latest CSV and place it at: `data/complaints.csv`
+  2) Build compact splits:  
+     ```bash
+     python -m src.prepare_data
+     ```
+  This writes compressed Parquet files to `data/processed/` (small and fast).
+
+### Model checkpoint
+- Final fine-tuned model (**DistilBERT**) is **not committed** by default to keep the repo light.
+- Reproduce locally:
+  ```bash
+  python -m src.train_hf
+
 ## Setup
 
 ### 1. Install Dependencies
