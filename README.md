@@ -39,19 +39,12 @@ kaiburr-task5-ml/
 
 ## Setup
 
-### 1. Create Virtual Environment
-```bash
-python -m venv .venv
-# activate your venv (Windows PowerShell):
-. .venv/Scripts/Activate.ps1
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Prepare Data
+### 2. Prepare Data
 ```bash
 python -m src.prepare_data
 ```
