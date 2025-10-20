@@ -1,0 +1,14 @@
+﻿# data
+data/*.csv
+data/processed/*
+!data/.gitkeep
+
+# models (we won't push the 250MB model by default)
+models/hf_runs/*
+models/hf_best_model/*
+
+# caches & noise
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

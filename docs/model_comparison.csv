@@ -1,0 +1,5 @@
+model,val_accuracy,val_macro_f1,test_accuracy,test_macro_f1
+LinearSVC,0.939425,0.783295,,
+LogisticRegression (saga),0.916150,0.751088,,
+MultinomialNB,0.909600,0.631166,,
+DistilBERT (fine-tuned),,,0.9461,0.8055
